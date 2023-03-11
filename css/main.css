@@ -1,0 +1,105 @@
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: grey;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #111;
+    line-height: 24px;
+}
+
+.wrapper{
+    max-width: 1200px; 
+    margin: 60px auto;
+    background-color: #fff;
+    position: relative;
+}
+
+.boxLeft{
+    width: 290px;
+    position: fixed ;
+    top: 80px;
+}
+
+.boxLeft li{
+    margin-bottom: 45px;
+    list-style: none;
+}
+
+.btn{
+    background-color: #000;
+    color: #fff;
+    text-decoration: none; 
+    padding: 10px;
+    width: 290px;
+    height: 40px;
+    border: 3px solid white; 
+    text-shadow: 5px -5px 5px red; 
+    box-shadow: 0 15px 0 0 green;
+    border-radius: 0;    
+    position: relative;   
+    top: 0;
+    transition: 0.6s;   
+    cursor: pointer; 
+}
+
+.btn:hover{
+    text-shadow: 0 0 0 red; 
+    box-shadow: 0 10px 0 0 red; 
+    border: 3px solid red; 
+    top: 10px;
+    border-radius: 50% 50% 0 0; 
+}
+
+.btn:focus, .btn:active{
+    text-shadow: 0 5px 0 red;  
+    box-shadow: 0 0 0 0 green;
+    top: 20px;
+}
+
+h1{
+    text-align: center;
+    margin: 20px;
+}
+
+h2{
+    text-align: left;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.boxRight{
+    width: 75%;
+    position: absolute;
+    margin-left: 300px;
+    text-align: justify;
+    text-indent: 40px;
+}
+
+.boxRight img{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.boxRight p:nth-child(odd){
+    font-style: italic;
+}
+
+.boxRight p:nth-child(even){
+    font-weight: bold;
+}
+
+.boxRight a{
+    text-decoration: none;
+    color: #000;
+}
+
+.homeback{
+    margin: 10px auto;
+    position: fixed ; 
+}
